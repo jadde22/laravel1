@@ -5,6 +5,7 @@ use App\Http\controllers\UsuariosController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\JordanController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\PedidosController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,4 +32,8 @@ Route::get('/jordan', [JordanController::class, 'listar']);
 
 Route:: get('clientes',
 [CustomerController::class,'listar']
+);
+
+Route::get('/pedidos',
+[PedidosController::class,'listar']
 );
